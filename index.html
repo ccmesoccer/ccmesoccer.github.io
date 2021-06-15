@@ -8,102 +8,44 @@ Last Edited on 15/06/2021
 <html>
 	
 <head>
+	
+<script src="./js/loadXML.js"></script>
 
-<script src="./js/sort.js"></script>
-	
-	
 </head>
 	
+
 <body>
-<p id="demo"></p>
-<script>document.getElementById("demo").innerHTML = "MyMelody";</script>
-<h3 align="center">化院足球队球员数据统计</h3>
+<script>
 
-<script type="text/javascript">
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
+xmlDoc = loadXML("./data/playerlist.xml");  // 读入xml文件
 
+/*验证xml读取是否成功
+for (i=1;i<xmlDoc.getElementsByTagName("player").length;i++)
+{
+document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("num")[0].childNodes[0].nodeValue);
+document.write("<br />");
+document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+document.write("<br />");
+document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
+}
+*/
 
-document.write("<table border='1'; align='center'>");
+x=xmlDoc.getElementsByTagName("player")[1].childNodes;
 
-xmlhttp.open("GET","./data/playerlist.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
+for (i=0;i<x.length;i++){
+	if (x[i].nodeType==1){  // only process element nodes
+		document.write(x[i].nodeName);
+		document.write(": ");
+		document.write(x[i].childNodes[0].nodeValue);
+		document.write("<br />");
+	}
+}
 
-var x=xmlDoc.getElementsByTagName("player");
-
-<!-- 表头 -->
-  document.write('<tr><th align="center">');
-  document.write(x[0].getElementsByTagName("num")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("pos")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("app")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
-  document.write("</th></tr>");
-
-
-<!-- 表格内容 -->
-for (i=1;i<x.length;i++)
-  {
-  document.write('<tr><td align="center">');
-  document.write(x[i].getElementsByTagName("num")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 0)
-	  document.write("本");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 1)
-		  document.write("研");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 2)
-		  document.write("博士后");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 3)
-		  document.write("特聘研究员");
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
-  document.write("</td></tr>");
-  }
-document.write("</table>");
 	
 </script>
-<br />
-<button type="button" onclick="sortByApp()">test</button>
-
-	
-<br />
-<p id="test">test text</p>
-<br /><br /><br /><br />
-<p>Find the Github page of our project <a href="https://github.com/ccmesoccer">here</a>!</p>
-<p>Or contact developer: yfwu0202@gmail.com</p>
-
 </body>
+
+
 </html>
 
 
