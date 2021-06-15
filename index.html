@@ -8,7 +8,7 @@ Last Edited on 14/06/2021
 <html>
 <body>
 
-<h3>化院足球队球员数据统计</h3>
+<h3 align="center">化院足球队球员数据统计</h3>
 
 <script type="text/javascript">
 if (window.XMLHttpRequest)
@@ -21,7 +21,7 @@ else
   }
 
 
-document.write("<table border='1'>");
+document.write("<table border='1'; align='center'>");
 
 xmlhttp.open("GET","./data/playerlist.xml",false);
 xmlhttp.send();
@@ -38,8 +38,6 @@ var x=xmlDoc.getElementsByTagName("player");
   document.write(x[0].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
   document.write('</th><th align="center">');
   document.write(x[0].getElementsByTagName("pos")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("birth")[0].childNodes[0].nodeValue);
   document.write('</th><th align="center">');
   document.write(x[0].getElementsByTagName("app")[0].childNodes[0].nodeValue);
   document.write('</th><th align="center">');
@@ -71,8 +69,6 @@ for (i=1;i<x.length;i++)
 		  document.write("博士后");
 	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 3)
 		  document.write("特聘研究员");
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("birth")[0].childNodes[0].nodeValue);
   document.write('</td><td align="center">');
   document.write(x[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
   document.write('</td><td align="center">');
