@@ -229,7 +229,31 @@
     <num>27</num>
     <name>马骋</name>
     <grade>19</grade>
-    <pos>0</pos>
+    <pos>2</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1810">
+    <num>9</num>
+    <name>陈小向</name>
+    <grade>18</grade>
+    <pos>2</pos>
+    <app>12</app>
+    <goal>1</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2016">
+    <num>81</num>
+    <name>李晨</name>
+    <grade>-</grade>
+    <pos>3</pos>
     <app>0</app>
     <goal>0</goal>
     <assist>0</assist>
