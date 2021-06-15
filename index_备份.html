@@ -1,0 +1,93 @@
+<!doctype html>
+
+<!--
+Author: Yufei Wu
+Last Edited on 15/06/2021
+-->
+
+<html>
+<body>
+
+<h3 align="center">化院足球队球员数据统计</h3>
+
+<script type="text/javascript">
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+
+
+document.write("<table border='1'; align='center'>");
+
+xmlhttp.open("GET","./data/playerlist.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+var x=xmlDoc.getElementsByTagName("player");
+
+<!-- 表头 -->
+  document.write('<tr><th align="center">');
+  document.write(x[0].getElementsByTagName("num")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("pos")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("app")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
+  document.write('</th><th align="center">');
+  document.write(x[0].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
+  document.write("</th></tr>");
+
+
+<!-- 表格内容 -->
+for (i=1;i<x.length;i++)
+  {
+  document.write('<tr><td align="center">');
+  document.write(x[i].getElementsByTagName("num")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 0)
+	  document.write("本");
+	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 1)
+		  document.write("研");
+	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 2)
+		  document.write("博士后");
+	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 3)
+		  document.write("特聘研究员");
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
+  document.write('</td><td align="center">');
+  document.write(x[i].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+</script>
+<br /><br /><br /><br /><br />
+<p>Find the Github page of our project <a href="https://github.com/ccmesoccer">here</a>!</p>
+<p>Or contact developer: yfwu0202@gmail.com</p>
+
+</body>
+</html>
+
+
