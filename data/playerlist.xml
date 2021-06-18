@@ -26,7 +26,7 @@
     <assist>1</assist>
     <yc>1</yc>
     <rc>0</rc>
-</player>
+    </player>
 
 <player id="2002">
     <num>40</num>
@@ -420,7 +420,7 @@
 </player>
 
 <player id="1805">
-    <num>-</num>
+    <num>12</num>
     <name>柯瀚</name>
     <grade>18</grade>
     <pos>0</pos>
@@ -444,7 +444,7 @@
 </player>
 
 <player id="1807">
-    <num>-</num>
+    <num>37</num>
     <name>张希文</name>
     <grade>18</grade>
     <pos>0</pos>
@@ -456,7 +456,7 @@
 </player>
 
 <player id="1808">
-    <num>-</num>
+    <num>1</num>
     <name>梁桀游</name>
     <grade>18</grade>
     <pos>0</pos>
@@ -554,7 +554,7 @@
 </player>
 
 <player id="1707">
-    <num>-</num>
+    <num>18</num>
     <name>黄杨</name>
     <grade>17</grade>
     <pos>0</pos>
@@ -566,7 +566,7 @@
 </player>
 
 <player id="1708">
-    <num>-</num>
+    <num>4</num>
     <name>朱泽源</name>
     <grade>17</grade>
     <pos>0</pos>
@@ -578,7 +578,7 @@
 </player>
 
 <player id="1709">
-    <num>-</num>
+    <num>37</num>
     <name>赵京梁</name>
     <grade>17</grade>
     <pos>0</pos>
@@ -591,7 +591,7 @@
 
 
 <player id="1710">
-    <num>-</num>
+    <num>16</num>
     <name>应东辰</name>
     <grade>17</grade>
     <pos>0</pos>
@@ -603,7 +603,7 @@
 </player>
 
 <player id="1711">
-    <num>-</num>
+    <num>26</num>
     <name>张弨</name>
     <grade>17</grade>
     <pos>0</pos>

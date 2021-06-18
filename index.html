@@ -2,7 +2,7 @@
 
 <!--
 Author: Yufei Wu
-Last Edited on 15/06/2021
+Last Edited on 17/06/2021
 -->
 
 <html>
@@ -10,6 +10,8 @@ Last Edited on 15/06/2021
 <head>
 	
 <script src="./js/loadXML.js"></script>
+<script src="./js/print2DArray.js"></script>
+<script src="./js/sort.js"></script>
 
 </head>
 	
@@ -30,19 +32,59 @@ document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("ap
 }
 */
 
-x=xmlDoc.getElementsByTagName("player")[1].childNodes;
+x=xmlDoc.getElementsByTagName("player");
 
-for (i=0;i<x.length;i++){
-	if (x[i].nodeType==1){  // only process element nodes
-		document.write(x[i].nodeName);
-		document.write(": ");
-		document.write(x[i].childNodes[0].nodeValue);
-		document.write("<br />");
+/*
+for (j=1;j<x.length;j++){
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){  // only process element nodes
+			document.write(x[j].childNodes[i].nodeName);
+			document.write(": ");
+			document.write(x[j].childNodes[i].childNodes[0].nodeValue);
+			document.write("; ");
+		}
+	}
+	document.write("<br />")
+}
+document.write("<br /><br /><br /><br /><p>xml遍历成功</ p>");
+*/
+
+var playersColumn = [];
+for (i=0;i<x[0].childNodes.length;i++){
+	if (x[0].childNodes[i].nodeType==1){
+		playersColumn.push(x[0].childNodes[i].childNodes[0].nodeValue)
+		}
+}
+
+var playersList = [];
+for (j=1;j<x.length;j++){
+	playersList[j-1]=[];
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){
+			playersList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue)
+		}
 	}
 }
 
+//print2DArray(playersList);
+	
+//sort
+sortPlayersList(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(0)
+
+<!-- 表头 -->
+document.write('<tr>');
+for (i=0;i<playersColumn.length;i++){
+	document.write('<th align="center"; id="0'+i+'"></th>');
+}
+document.write("</tr>");
+
+document.getElementById("0"+i).innerHTML = "Hello JavaScript!"
 	
 </script>
+<p id="demo"></p>
+<br /><br />
+<button onclick="sortPlayersList(0, 1)">按球衣号码排序</button>
+<button onclick="sortPlayersList(0, 4)">按出场次数排序</button>
 </body>
 
 
