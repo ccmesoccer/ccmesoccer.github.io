@@ -14,7 +14,6 @@ function loadXML(dname){
 		xmlhttp.open("GET",dname,false);
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
-		document.write("xmlDoc is loaded, ready for use. <br />");
 		return (xmlDoc)
 	}
 	catch(e) {alert(e.message)}

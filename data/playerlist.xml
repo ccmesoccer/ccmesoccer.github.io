@@ -127,7 +127,7 @@
 </player>
 
 <player id="2008">
-    <num>42</num>
+    <num>25</num>
     <name>张腾远</name>
     <grade>19</grade>
     <pos>0</pos>
@@ -151,7 +151,7 @@
 </player>
 
 <player id="2010">
-    <num>42</num>
+    <num>14</num>
     <name>唐浩程</name>
     <grade>19</grade>
     <pos>0</pos>
@@ -566,7 +566,7 @@
 </player>
 
 <player id="1708">
-    <num>4</num>
+    <num>-</num>
     <name>朱泽源</name>
     <grade>17</grade>
     <pos>0</pos>
@@ -578,7 +578,7 @@
 </player>
 
 <player id="1709">
-    <num>37</num>
+    <num>-</num>
     <name>赵京梁</name>
     <grade>17</grade>
     <pos>0</pos>

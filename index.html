@@ -2,7 +2,7 @@
 
 <!--
 Author: Yufei Wu
-Last Edited on 17/06/2021
+Last Edited on 18/06/2021
 -->
 
 <html>
@@ -34,25 +34,10 @@ document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("ap
 
 x=xmlDoc.getElementsByTagName("player");
 
-/*
-for (j=1;j<x.length;j++){
-	for (i=0;i<x[j].childNodes.length;i++){
-		if (x[j].childNodes[i].nodeType==1){  // only process element nodes
-			document.write(x[j].childNodes[i].nodeName);
-			document.write(": ");
-			document.write(x[j].childNodes[i].childNodes[0].nodeValue);
-			document.write("; ");
-		}
-	}
-	document.write("<br />")
-}
-document.write("<br /><br /><br /><br /><p>xml遍历成功</ p>");
-*/
-
 var playersColumn = [];
 for (i=0;i<x[0].childNodes.length;i++){
 	if (x[0].childNodes[i].nodeType==1){
-		playersColumn.push(x[0].childNodes[i].childNodes[0].nodeValue)
+		playersColumn.push(x[0].childNodes[i].childNodes[0].nodeValue);
 		}
 }
 
@@ -61,30 +46,56 @@ for (j=1;j<x.length;j++){
 	playersList[j-1]=[];
 	for (i=0;i<x[j].childNodes.length;i++){
 		if (x[j].childNodes[i].nodeType==1){
-			playersList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue)
+			playersList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue);
 		}
 	}
 }
 
-//print2DArray(playersList);
-	
-//sort
-sortPlayersList(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(0)
+length = playersColumn.length;
 
-<!-- 表头 -->
-document.write('<tr>');
-for (i=0;i<playersColumn.length;i++){
-	document.write('<th align="center"; id="0'+i+'"></th>');
+function sortPrintPlayersList(code, sign) {
+	playersList.sort(function(x,y){
+		if(x[code] == '-') return 1000;
+		else if(y[code] == '-') return -1000;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
+		else return sign * (x[code] - y[code]);
+	})
+	
+	
+	var table='<table border="1" align="center"><tr>';
+	// 表头
+	for (i=0;i<length;i++){
+		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+	}
+	table += '</tr>';
+
+	// 表格内容
+	for (j=0;j<playersList.length;j++){
+		table += '<tr>';
+		for (i=0;i<length;i++){
+			table += '<td align="center">' + playersList[j][i] +'</td>';
+		}
+		table += '</tr>';
+	}
+	table += '</table>';
+	return table;
 }
-document.write("</tr>");
-
-document.getElementById("0"+i).innerHTML = "Hello JavaScript!"
-	
 </script>
-<p id="demo"></p>
+	
+<div id="demo">
+	<script>
+		//预排序
+		document.getElementById('demo').innerHTML=sortPrintPlayersList(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
+	</script>
+</div>
+<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(5, 0);">按进球数排序</button>
+<button onclick="document.write(sortPrintPlayersList(4, 0));">按出场次数排序</button>
+
+
+
+
+
 <br /><br />
-<button onclick="sortPlayersList(0, 1)">按球衣号码排序</button>
-<button onclick="sortPlayersList(0, 4)">按出场次数排序</button>
+
 </body>
 
 
