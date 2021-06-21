@@ -2,7 +2,7 @@
 
 <!--
 Author: Yufei Wu
-Last Edited on 18/06/2021
+Last Edited on 21/06/2021
 -->
 
 <html>
@@ -24,17 +24,6 @@ Last Edited on 18/06/2021
 posList = ["本科生", "研究生", "博士后", "特聘研究员"];
 xmlDoc = loadXML("./data/playerlist.xml");  // 读入xml文件
 
-/*验证xml读取是否成功
-for (i=1;i<xmlDoc.getElementsByTagName("player").length;i++)
-{
-document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("num")[0].childNodes[0].nodeValue);
-document.write("<br />");
-document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-document.write("<br />");
-document.write(xmlDoc.getElementsByTagName("player")[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
-}
-*/
-
 x=xmlDoc.getElementsByTagName("player");
 
 var playersColumn = [];
@@ -54,19 +43,18 @@ for (j=1;j<x.length;j++){
 	}
 }
 
-length = playersColumn.length;
 
-function sortPrintPlayersList(code, sign) {
+function sortPlayersList_Num(code, sign) {
 	playersList.sort(function(x,y){
-		if(x[code] == '-') return 1000;
-		else if(y[code] == '-') return -1000;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
+		if(x[code] == '-') return 1;
+		else if(y[code] == '-') return -1;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
 		else return sign * (x[code] - y[code]);
 	})
 	
 	var table='<table border="1" align="center"><tr>';
 	
 	// 表头
-	for (i=0;i<length;i++){
+	for (i=0;i<playersColumn.length;i++){
 		table += '<th align="center">' + playersColumn[i] + '</th>'; 
 	}
 	table += '</tr>';
@@ -74,7 +62,35 @@ function sortPrintPlayersList(code, sign) {
 	// 表格内容
 	for (j=0;j<playersList.length;j++){
 		table += '<tr>';
-		for (i=0;i<length;i++){
+		for (i=0;i<playersColumn.length;i++){
+			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
+			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
+		}
+		table += '</tr>';
+	}
+	table += '</table>';
+	return table;
+}
+
+function sortPlayersList_String(code, sign) {
+	playersList.sort(function(x,y){
+		if(x[code] == '-') return 1;
+		else if(y[code] == '-') return -1;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
+		else return sign * x[code].localeCompare(y[code]);
+	})
+	
+	var table='<table border="1" align="center"><tr>';
+	
+	// 表头
+	for (i=0;i<playersColumn.length;i++){
+		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+	}
+	table += '</tr>';
+
+	// 表格内容
+	for (j=0;j<playersList.length;j++){
+		table += '<tr>';
+		for (i=0;i<playersColumn.length;i++){
 			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
 			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
 		}
@@ -86,21 +102,21 @@ function sortPrintPlayersList(code, sign) {
 </script>
 
 <div align="center">
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(0, 1);">按球衣号码排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(1, 1);">按姓名排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(2, 1);">按年级排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(3, 1);">按身份排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(4, -1);">按出场次数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(5, -1);">按进球数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(6, -1);">按助攻数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(7, -1);">按黄牌数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(8, -1);">按红牌数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
 </div>
 
 <div id="demo">
 	<script>
 		//预排序
-		document.getElementById('demo').innerHTML=sortPrintPlayersList(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
+		document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
 	</script>
 </div>
 
