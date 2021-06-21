@@ -102,23 +102,22 @@ function sortPlayersList_String(code, sign) {
 </script>
 
 <div align="center">
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
-	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
 </div>
 
-<div id="demo">
-	<script>
-		//预排序
-		document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
-	</script>
-</div>
+<div id="table">表格显示错误</div>
+
+<script>  //预排序
+	document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);
+</script>
 
 <br /><br />
 
