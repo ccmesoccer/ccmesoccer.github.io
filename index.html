@@ -51,7 +51,7 @@ function sortPlayersList_Num(code, sign) {
 		else return sign * (x[code] - y[code]);
 	})
 	
-	var table='<table border="1" align="center"><tr>';
+	var table='<table border="1" align="center" cellpadding="5"><tr>';
 	
 	// 表头
 	for (i=0;i<playersColumn.length;i++){
@@ -101,6 +101,7 @@ function sortPlayersList_String(code, sign) {
 }
 </script>
 
+<br />
 <div align="center">
 	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
 	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
@@ -112,8 +113,8 @@ function sortPlayersList_String(code, sign) {
 	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
 	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
 </div>
-
-<div id="table">表格显示错误</div>
+<br />
+<div id="table"></div>
 
 <script>  //预排序
 	document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);
