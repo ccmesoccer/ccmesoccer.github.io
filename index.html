@@ -10,15 +10,18 @@ Last Edited on 18/06/2021
 <head>
 	
 <script src="./js/loadXML.js"></script>
-<script src="./js/print2DArray.js"></script>
-<script src="./js/sort.js"></script>
+
 
 </head>
 	
 
 <body>
-<script>
 
+<h3 align="center">北京大学化学院足球队球员数据统计</h3>
+<h4 align="center">（截止2021.06.21）</h4>
+
+<script>
+posList = ["本科生", "研究生", "博士后", "特聘研究员"];
 xmlDoc = loadXML("./data/playerlist.xml");  // 读入xml文件
 
 /*验证xml读取是否成功
@@ -60,8 +63,8 @@ function sortPrintPlayersList(code, sign) {
 		else return sign * (x[code] - y[code]);
 	})
 	
-	
 	var table='<table border="1" align="center"><tr>';
+	
 	// 表头
 	for (i=0;i<length;i++){
 		table += '<th align="center">' + playersColumn[i] + '</th>'; 
@@ -72,7 +75,8 @@ function sortPrintPlayersList(code, sign) {
 	for (j=0;j<playersList.length;j++){
 		table += '<tr>';
 		for (i=0;i<length;i++){
-			table += '<td align="center">' + playersList[j][i] +'</td>';
+			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
+			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
 		}
 		table += '</tr>';
 	}
@@ -80,21 +84,30 @@ function sortPrintPlayersList(code, sign) {
 	return table;
 }
 </script>
-	
+
+<div align="center">
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(0, 1);">按球衣号码排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(1, 1);">按姓名排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(2, 1);">按年级排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(3, 1);">按身份排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(4, -1);">按出场次数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(5, -1);">按进球数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(6, -1);">按助攻数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(7, -1);">按黄牌数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(8, -1);">按红牌数排序</button>
+</div>
+
 <div id="demo">
 	<script>
 		//预排序
 		document.getElementById('demo').innerHTML=sortPrintPlayersList(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
 	</script>
 </div>
-<button onclick="document.getElementById('demo').innerHTML=sortPrintPlayersList(5, 0);">按进球数排序</button>
-<button onclick="document.write(sortPrintPlayersList(4, 0));">按出场次数排序</button>
-
-
-
-
 
 <br /><br />
+
+<p>Find our project on <a href="https://github.com/ccmesoccer">Github</a>!</p>
+<p>Or contact the developer: yfwu0202@gmail.com</p>
 
 </body>
 
