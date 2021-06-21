@@ -2,92 +2,132 @@
 
 <!--
 Author: Yufei Wu
-Last Edited on 15/06/2021
+Last Edited on 21/06/2021
 -->
 
 <html>
+	
+<head>
+	
+<script src="./js/loadXML.js"></script>
+
+
+</head>
+	
+
 <body>
 
-<h3 align="center">化院足球队球员数据统计</h3>
+<h3 align="center">北京大学化学院足球队球员数据统计</h3>
+<h4 align="center">（截止2021.06.21）</h4>
 
-<script type="text/javascript">
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
-  xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
-  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
+<script>
+posList = ["本科生", "研究生", "博士后", "特聘研究员"];
+xmlDoc = loadXML("./data/playerlist.xml");  // 读入xml文件
 
+x=xmlDoc.getElementsByTagName("player");
 
-document.write("<table border='1'; align='center'>");
+var playersColumn = [];
+for (i=0;i<x[0].childNodes.length;i++){
+	if (x[0].childNodes[i].nodeType==1){
+		playersColumn.push(x[0].childNodes[i].childNodes[0].nodeValue);
+		}
+}
 
-xmlhttp.open("GET","./data/playerlist.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML;
-
-var x=xmlDoc.getElementsByTagName("player");
-
-<!-- 表头 -->
-  document.write('<tr><th align="center">');
-  document.write(x[0].getElementsByTagName("num")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("pos")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("app")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
-  document.write('</th><th align="center">');
-  document.write(x[0].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
-  document.write("</th></tr>");
+var playersList = [];
+for (j=1;j<x.length;j++){
+	playersList[j-1]=[];
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){
+			playersList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue);
+		}
+	}
+}
 
 
-<!-- 表格内容 -->
-for (i=1;i<x.length;i++)
-  {
-  document.write('<tr><td align="center">');
-  document.write(x[i].getElementsByTagName("num")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("grade")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 0)
-	  document.write("本");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 1)
-		  document.write("研");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 2)
-		  document.write("博士后");
-	  else if (x[i].getElementsByTagName("pos")[0].childNodes[0].nodeValue == 3)
-		  document.write("特聘研究员");
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("app")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("goal")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("assist")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("yc")[0].childNodes[0].nodeValue);
-  document.write('</td><td align="center">');
-  document.write(x[i].getElementsByTagName("rc")[0].childNodes[0].nodeValue);
-  document.write("</td></tr>");
-  }
-document.write("</table>");
+function sortPlayersList_Num(code, sign) {
+	playersList.sort(function(x,y){
+		if(x[code] == '-') return 1;
+		else if(y[code] == '-') return -1;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
+		else return sign * (x[code] - y[code]);
+	})
+	
+	var table='<table border="1" align="center"><tr>';
+	
+	// 表头
+	for (i=0;i<playersColumn.length;i++){
+		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+	}
+	table += '</tr>';
+
+	// 表格内容
+	for (j=0;j<playersList.length;j++){
+		table += '<tr>';
+		for (i=0;i<playersColumn.length;i++){
+			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
+			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
+		}
+		table += '</tr>';
+	}
+	table += '</table>';
+	return table;
+}
+
+function sortPlayersList_String(code, sign) {
+	playersList.sort(function(x,y){
+		if(x[code] == '-') return 1;
+		else if(y[code] == '-') return -1;  // 这两行处理是'-'的数据，不论升序还是降序都排在最后
+		else return sign * x[code].localeCompare(y[code]);
+	})
+	
+	var table='<table border="1" align="center"><tr>';
+	
+	// 表头
+	for (i=0;i<playersColumn.length;i++){
+		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+	}
+	table += '</tr>';
+
+	// 表格内容
+	for (j=0;j<playersList.length;j++){
+		table += '<tr>';
+		for (i=0;i<playersColumn.length;i++){
+			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
+			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
+		}
+		table += '</tr>';
+	}
+	table += '</table>';
+	return table;
+}
 </script>
-<br /><br /><br /><br /><br />
-<p>Find the Github page of our project <a href="https://github.com/ccmesoccer">here</a>!</p>
-<p>Or contact developer: yfwu0202@gmail.com</p>
+
+<div align="center">
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
+	<button onclick="document.getElementById('demo').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
+</div>
+
+<div id="demo">
+	<script>
+		//预排序
+		document.getElementById('demo').innerHTML=sortPlayersList_Num(0, 1);  // 第一个指标：对哪一列进行排序；第二个指标：升序(1)、降序(-1)
+	</script>
+</div>
+
+<br /><br />
+
+<p>Find our project on <a href="https://github.com/ccmesoccer">Github</a>!</p>
+<p>Or contact the developer: yfwu0202@gmail.com</p>
 
 </body>
+
+
 </html>
 
 
