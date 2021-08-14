@@ -1,0 +1,255 @@
+<matchlist>
+
+<match id="0000">
+    <date>比赛日期</date>
+    <opp>对手</opp>
+    <result>比分</result>
+    <scorer>进球队员</scorer>
+</match>
+
+<!-- 21北大杯 -->
+
+<match id="2110">
+    <date>2021.5.23</date>
+    <opp>工学</opp>
+    <result>1-3</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="2104">
+    <date>2021.5.8</date>
+    <opp>数学</opp>
+    <result>1-1</result>
+    <scorer>彭程远</scorer>
+</match>
+
+<match id="2103">
+    <date>2021.5.1</date>
+    <opp>医学</opp>
+    <result>1-2</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="2102">
+    <date>2021.4.25</date>
+    <opp>中文</opp>
+    <result>8-0</result>
+    <scorer>张旭升*2，王子宁，许铃鸿*2，吴钒瑞，刘崇文*2</scorer>
+</match>
+
+<match id="2100">
+    <date>2021.4.4</date>
+    <opp>政历信</opp>
+    <result>3-3</result>
+    <scorer>许铃鸿*2，王子宁</scorer>
+</match>
+
+<!-- 20新生杯 -->
+
+<match id="2090">
+    <date>2020.12.12</date>
+    <opp>国关</opp>
+    <result>1-2</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="2080">
+    <date>2020.11.29</date>
+    <opp>医学</opp>
+    <result>5-2</result>
+    <scorer>王子宁，张腾远，许铃鸿*3</scorer>
+</match>
+
+<match id="2070">
+    <date>2020.11.21</date>
+    <opp>光华</opp>
+    <result>7-1</result>
+    <scorer>凌烨，许铃鸿*3，吴钒瑞*2，张旭升</scorer>
+</match>
+
+<match id="2052">
+    <date>2020.11.8</date>
+    <opp>心艺哲</opp>
+    <result>2-0</result>
+    <scorer>陈小向，陆传捷</scorer>
+</match>
+
+<match id="2051">
+    <date>2020.10.25</date>
+    <opp>城环</opp>
+    <result>4-1</result>
+    <scorer>吴钒瑞，王子宁*2，凌烨</scorer>
+</match>
+
+<match id="2050">
+    <date>2020.10.18</date>
+    <opp>环社</opp>
+    <result>11-0</result>
+    <scorer>张旭升*2，李宇宸*2，许铃鸿*4，张腾远*2，凌烨</scorer>
+</match>
+
+<!-- 19新生杯 -->
+
+<match id="1970">
+    <date>2019.11.17</date>
+    <opp>国关</opp>
+    <result>3-4</result>
+    <scorer>许铃鸿，陆传捷，张旭升</scorer>
+</match>
+
+<match id="1960">
+    <date>2019.11.9</date>
+    <opp>经济</opp>
+    <result>0-0(3-1)</result>
+    <scorer>-</scorer>
+</match>
+
+<match id="1952">
+    <date>2019.10.26</date>
+    <opp>医学</opp>
+    <result>1-1</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="1951">
+    <date>2019.10.19</date>
+    <opp>外语</opp>
+    <result>6-1</result>
+    <scorer>许铃鸿*2，张旭升</scorer>
+</match>
+
+<match id="1950">
+    <date>2019.10.13</date>
+    <opp>政考新</opp>
+    <result>12-0</result>
+    <scorer>张旭升*4，许铃鸿*2，喻琪锐*2，孙鹏伟，陆传捷，裘天予</scorer>
+</match>
+
+<!-- 19北大杯 -->
+
+<match id="1920">
+    <date>2019.5.12</date>
+    <opp>国关</opp>
+    <result>0-3</result>
+    <scorer>-</scorer>
+</match>
+
+<match id="1911">
+    <date>2019.4.21</date>
+    <opp>数学</opp>
+    <result>2-0</result>
+    <scorer>张旭升，OG</scorer>
+</match>
+
+<match id="1901">
+    <date>2019.3.17</date>
+    <opp>信科</opp>
+    <result>0-1</result>
+    <scorer>-</scorer>
+</match>
+
+<match id="1900">
+    <date>2019.3.10</date>
+    <opp>燕京</opp>
+    <result>5-1</result>
+    <scorer>许铃鸿，张旭升*2，王子宁*2</scorer>
+</match>
+
+<!-- 18新生杯 -->
+
+<match id="1870">
+    <date>2018.11.11</date>
+    <opp>工学</opp>
+    <result>2-4</result>
+    <scorer>许铃鸿*2</scorer>
+</match>
+
+<match id="1860">
+    <date>2018.11.3</date>
+    <opp>环考社</opp>
+    <result>6-1</result>
+    <scorer>许铃鸿*4，崔卓，张旭升</scorer>
+</match>
+
+<match id="1852">
+    <date>2018.10.28</date>
+    <opp>外语</opp>
+    <result>9-3</result>
+    <scorer>许铃鸿*4，王子宁，OG，张旭升*2，傅林轲</scorer>
+</match>
+
+<match id="1851">
+    <date>2018.10.20</date>
+    <opp>医学</opp>
+    <result>3-5</result>
+    <scorer>许铃鸿*2，张旭升</scorer>
+</match>
+
+<match id="1850">
+    <date>2018.10.14</date>
+    <opp>地空</opp>
+    <result>7-2</result>
+    <scorer>许铃鸿*7</scorer>
+</match>
+
+<!-- 18北大杯 -->
+
+<match id="1810">
+    <date>2018.4.15</date>
+    <opp>政历信</opp>
+    <result>1-4</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="1802">
+    <date>2018.4.8</date>
+    <opp>生科</opp>
+    <result>5-1</result>
+    <scorer>许铃鸿*3，李逸坦，张旭升</scorer>
+</match>
+
+<match id="1801">
+    <date>2018.3.31</date>
+    <opp>光华</opp>
+    <result>1-1</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<match id="1800">
+    <date>2018.3.18</date>
+    <opp>地空</opp>
+    <result>1-1</result>
+    <scorer>许铃鸿</scorer>
+</match>
+
+<!-- 17新生杯 -->
+
+<match id="1760">
+    <date>2017.11.11</date>
+    <opp>法学</opp>
+    <result>1-6</result>
+    <scorer>张旭升</scorer>
+</match>
+
+<match id="1752">
+    <date>2017.10.29</date>
+    <opp>元培</opp>
+    <result>0-5</result>
+    <scorer>-</scorer>
+</match>
+
+<match id="1751">
+    <date>2017.10.21</date>
+    <opp>政新</opp>
+    <result>5-4</result>
+    <scorer>王子宁，许铃鸿*3，李欢</scorer>
+</match>
+
+<match id="1750">
+    <date>2017.10.14</date>
+    <opp>外语</opp>
+    <result>4-4</result>
+    <scorer>王子宁*2，许铃鸿*2</scorer>
+</match>
+
+</playerlist>
