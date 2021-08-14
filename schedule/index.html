@@ -9,7 +9,8 @@ Last Edited on 21/06/2021
 	
 <head>
 	
-
+<script src="../js/loadXML.js"></script>
+<script src="../js/matchIdInterpret.js"></script>
 
 </head>
 	
@@ -18,6 +19,53 @@ Last Edited on 21/06/2021
 
 <h3 align="center">日程表</h3>
 
+<script>
+xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
+
+x=xmlDoc.getElementsByTagName("match");
+
+var matchColumn = ["日期", "比赛", "对手", "比分", "进球队员"];
+
+var matchList = [];
+for (j=1;j<x.length;j++){
+	matchList[j-1]=[];
+	matchList[j-1].push(x[j].getAttribute("id"));
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){
+			matchList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue);
+		}
+	}
+}
+
+var table='<table border="1" align="center" cellpadding="5"><tr>';
+	
+// 表头
+for (i=0;i<matchColumn.length;i++){
+	table += '<th align="center">' + matchColumn[i] + '</th>'; 
+}
+table += '</tr>';
+
+// 表格内容
+for (j=0;j<matchList.length;j++){
+	table += '<tr>';
+	table += '<td align="center">' + matchList[j][1].split('.').join('/') +'</td>';
+	table += '<td align="center">' + matchIdInterpret(matchList[j][0]) +'</td>';
+	for (i=2;i<matchColumn.length;i++){
+		table += '<td align="center">' + matchList[j][i] +'</td>';
+	}
+	table += '</tr>';
+}
+table += '</table>';
+
+</script>
+
+
+<div id="table"></div>
+
+<script>document.getElementById('table').innerHTML = table;</script>
+
+	
+	
 </body>
 
 
