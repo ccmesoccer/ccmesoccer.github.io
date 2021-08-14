@@ -24,7 +24,7 @@ xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
 
 x=xmlDoc.getElementsByTagName("match");
 
-var matchColumn = ["日期", "比赛", "对手", "比分", "进球队员"];
+var matchColumn = ["日期", "比赛", "对手", "结果", "进球队员"];
 
 var matchList = [];
 for (j=1;j<x.length;j++){
@@ -50,9 +50,9 @@ for (j=0;j<matchList.length;j++){
 	table += '<tr>';
 	table += '<td align="center">' + matchList[j][1].split('.').join('/') +'</td>';
 	table += '<td align="center">' + matchIdInterpret(matchList[j][0]) +'</td>';
-	for (i=2;i<matchColumn.length;i++){
-		table += '<td align="center">' + matchList[j][i] +'</td>';
-	}
+	table += '<td align="center">' + matchList[j][2] +'</td>';
+	table += '<td align="center"><img src="../img/Green light.png" alt="W" width="17" height="17" style="float:left">' + matchList[j][3] +'</td>';
+	table += '<td align="center">' + matchList[j][4] +'</td>';
 	table += '</tr>';
 }
 table += '</table>';
@@ -62,9 +62,14 @@ table += '</table>';
 
 <div id="table"></div>
 
-<script>document.getElementById('table').innerHTML = table;</script>
+<script>
 
+document.getElementById('table').innerHTML = table;
 	
+//to do: 图片样式改CSS，增加结果处理函数，增加比赛视频链接
+</script>
+
+
 	
 </body>
 
