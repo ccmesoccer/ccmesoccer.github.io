@@ -88,12 +88,12 @@
 	position: fixed;
 	width: 1240px;
 	text-align: left;
-	text-indent: 30px;
+	text-indent: 0px;
 	font-family: "LiSu"; 
 	font-size: 40px;
 	letter-spacing: 3px;
 	margin: 0;
-	padding: 20px 20px 15px 20px;
+	padding: 20px 20px 15px 30px;
 	background-color: rgba(16,37,56,1);
 	color: #fff;
 	z-index: 120;
