@@ -130,16 +130,13 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 110px;
-	height: 110px;
+	height: 120px;
 	margin: 0 20px;
 	background: rgba(155, 0, 0, 0.6);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	cursor: pointer;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
 }
 
 #wrap .menu_tab .tab:hover {
@@ -148,14 +145,16 @@
 
 #wrap .menu_tab .tab img {
 	display: block;
-	width: 34px;
-	height: 34px;
-	margin: 20px auto 12px;
+	width: 70px;
+	height: 70px;
+	margin: 10px auto 8px;
 }
 
 #wrap .menu_tab .tab span {
 	display: block;
 	color: #fff;
+	font-family: SimHei;
+	font-size: 20px;
 }
 
 
@@ -232,7 +231,7 @@
 	height: 100%;
 	margin-top: 0;
 	line-height: 30px;
-	font-size: 15px;
+	font-size: 16px;
 	color: #000;
 	text-indent: 50px;
 	text-align: left;
@@ -267,7 +266,7 @@
 	height: 100%;
 	margin-top: 0;
 	line-height: 30px;
-	font-size: 15px;
+	font-size: 16px;
 	color: #000;
 	text-indent: 50px;
 	text-align: left;
@@ -311,6 +310,51 @@
 	text-align: center;
 	margin-top: 25px;
 }
+
+/*关于我们*/
+#about {
+	position: relative;
+	margin: 0 300px;
+	width: 680px;
+}
+
+#about td {
+	text-align: center;
+}
+
+#about .container {
+	position: relative;
+	left: 25%;
+	width: 50%;
+}
+
+#about .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CD5C3A;
+}
+
+#about .container:hover .overlay {
+  opacity: 1;
+}
+
+#about .overlay_text {
+	color: white;
+	font-size: 14px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
 
 /*首页底部*/
 
