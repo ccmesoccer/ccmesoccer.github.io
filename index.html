@@ -12,7 +12,7 @@ Last Edited on 15/08/2021
 	<link rel="stylesheet" type="text/css" href="css/basic.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <title>北京大学化学与分子工程学院足球队</title>
-
+	<script src="./js/loadXML.js"></script>
 
 </head>
 	
@@ -52,31 +52,73 @@ Last Edited on 15/08/2021
 	</div>
 </div>
 
+<script>
+xmlDoc = loadXML("./news/news.xml");  // 读入xml文件
 
+x=xmlDoc.getElementsByTagName("news");
 
-<div>
-	<h4 align="left">关于我们</h4>
+var newsList = new Array(3);
+for (j=0;j<3;j++){
+	newsList[j]=[];
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){
+			newsList[j].push(x[j].childNodes[i].childNodes[0].nodeValue);
+		}
+	}
+}
 
-	<p>b站主页    直播间    微信公众号</p>
-	<p>由于开发能力有限，不能保证网页对不同设备的适配，建议使用电脑浏览器查看本站。</p>
-	<p>欢迎关注我们的<a href="https://github.com/ccmesoccer">Github项目</a>!</p>
-	<p>Find our project on <a href="https://github.com/ccmesoccer">Github</a>!</p>
-	<p>联系开发者：yfwu0202 AT gmail.com</p>
-	<p>Contact the developer: yfwu0202 AT gmail.com</p>
+var news='<table id="newstable">';
+
+// 表格内容
+for (j=0;j<3;j++){
+	news += '<tr>';
+	news += '<td id="newsdate">' + newsList[j][0] + '</td>';
+	news += '<td id="newstitle">' + newsList[j][1] + '</td>';
+	news += '</tr><tr>';
+	news += '<td></td>';
+	news += '<td id="newstext">' + newsList[j][2] + '</td>';
+	news += '</tr>';
+}
+news += '</table>';
+</script>
+
+<div id="index_content">
+	<div class="block">
+		<h1>球队动态</h1>
+		<div id="news"></div>
+	</div>
+
+	<div class="block">
+		<h1>关于我们</h1>
+		<p>b站主页    直播间    微信公众号</p>
+		<p>由于开发能力有限，不能保证网页对不同设备的适配，建议使用电脑浏览器查看本站。</p>
+		<p>欢迎关注我们的<a href="https://github.com/ccmesoccer">Github项目</a>!</p>
+		<p>Find our project on <a href="https://github.com/ccmesoccer">Github</a>!</p>
+		<br/>
+		<p>联系开发者：yfwu0202 AT gmail.com</p>
+		<p>Contact the developer: yfwu0202 AT gmail.com</p>
+	</div>
+
+	<div class="block">
+		<h1>致谢</h1>
+		<div class="text">
+			<p>网页开发：吴宇飞，陆传捷；视频制作：邓卓锴，吴宇飞，王应泽；数据统计：封凡，黄志贤</p>
+			<p>感谢支持和关注化院足球的每一个人</p>
+		</div>
+	</div>
 </div>
 
-<div>
-	<h4 align="left">致谢</h4>
-	<p>网页开发：吴宇飞，陆传捷；视频制作：邓卓锴，吴宇飞，王应泽；数据统计：封凡，黄志贤</p>
-	<p>感谢支持和关注化院足球的每一个人</p>
+
+<div id="copyright">
+	<p>本网站遵照<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU General Public License v2.0协议</a>开放源代码</p>
+	<p>Copyright (C) 2021 北京大学化学与分子工程学院足球队</p>
 </div>
 
-<div>
-	<p>本网站根据GNU General Public License v2.0开源</p>
-</div>
+<script>
+	document.getElementById('news').innerHTML=news;
+</script>
 
 </body>
-
 
 </html>
 
