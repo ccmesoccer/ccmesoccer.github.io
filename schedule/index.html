@@ -8,16 +8,78 @@ Last Edited on 21/06/2021
 <html>
 	
 <head>
-	
-
+	<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script src="../js/loadXML.js"></script>
+	<script src="../js/matchIdInterpret.js"></script>
 
 </head>
 	
 
 <body>
+<div id="wrap">
+    <!--顶部标题-->
+	<span id="wrap_title">北京大学化学与分子工程学院足球队</span>
+    <!--顶部logo-->
+    <div id="wrap_logo">
+    	<img src="../img/logo_ccme.png" alt="化院足球队Logo" />
+    </div>
+</div>
 
-<h3 align="center">日程表</h3>
+<span id="page_title">比赛日程</span>
 
+<script>
+xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
+
+x=xmlDoc.getElementsByTagName("match");
+
+var matchColumn = ["日期", "比赛", "对手", "结果", "进球队员"];
+
+var matchList = [];
+for (j=1;j<x.length;j++){
+	matchList[j-1]=[];
+	matchList[j-1].push(x[j].getAttribute("id"));
+	for (i=0;i<x[j].childNodes.length;i++){
+		if (x[j].childNodes[i].nodeType==1){
+			matchList[j-1].push(x[j].childNodes[i].childNodes[0].nodeValue);
+		}
+	}
+}
+
+var table='<table border="1" align="center" cellpadding="5"><tr>';
+	
+// 表头
+for (i=0;i<matchColumn.length;i++){
+	table += '<th align="center">' + matchColumn[i] + '</th>'; 
+}
+table += '</tr>';
+
+// 表格内容
+for (j=0;j<matchList.length;j++){
+	table += '<tr>';
+	table += '<td align="center">' + matchList[j][1].split('.').join('/') +'</td>';
+	table += '<td align="center">' + matchIdInterpret(matchList[j][0]) +'</td>';
+	table += '<td align="center">' + matchList[j][2] +'</td>';
+	table += '<td align="center"><img src="../img/Green light.png" alt="W" width="17" height="17" style="float:left">' + matchList[j][3] +'</td>';
+	table += '<td align="center">' + matchList[j][4] +'</td>';
+	table += '</tr>';
+}
+table += '</table>';
+
+</script>
+
+
+<div id="table"></div>
+
+<script>
+
+document.getElementById('table').innerHTML = table;
+	
+//to do: 图片样式改CSS，增加结果处理函数，增加比赛视频链接
+</script>
+
+
+	
 </body>
 
 

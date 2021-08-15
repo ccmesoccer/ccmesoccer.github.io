@@ -1,0 +1,619 @@
+<playerlist>
+
+<player id="0000">
+    <num>球衣号码</num>
+    <name>姓名</name>
+    <grade>年级</grade>
+    <pos>身份</pos>
+    <app>出场</app>
+    <goal>进球</goal>
+    <assist>助攻</assist>
+    <yc>黄牌</yc>
+    <rc>红牌</rc>
+</player>
+
+<!-- 身份标识：0-本科，1-研究生，2-博士后，3-特聘研究员 -->
+
+<!-- 25年毕业 -->
+
+<player id="2001">
+    <num>77</num>
+    <name>黄志贤</name>
+    <grade>20</grade>
+    <pos>1</pos>
+    <app>20</app>
+    <goal>1</goal>
+    <assist>1</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+    </player>
+
+<player id="2002">
+    <num>40</num>
+    <name>张少君</name>
+    <grade>20</grade>
+    <pos>1</pos>
+    <app>3</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2003">
+    <num>4</num>
+    <name>贺润东</name>
+    <grade>20</grade>
+    <pos>1</pos>
+    <app>1</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<!-- 24年毕业 -->
+
+<player id="1901">
+    <num>28</num>
+    <name>王朝骅</name>
+    <grade>19</grade>
+    <pos>1</pos>
+    <app>5</app>
+    <goal>1</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1902">
+    <num>42</num>
+    <name>彭程远</name>
+    <grade>19</grade>
+    <pos>1</pos>
+    <app>5</app>
+    <goal>1</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2004">
+    <num>20</num>
+    <name>凌烨</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>11</app>
+    <goal>3</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2005">
+    <num>8</num>
+    <name>李宇宸</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>8</app>
+    <goal>2</goal>
+    <assist>3</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2006">
+    <num>99</num>
+    <name>李嘉颢</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>6</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2007">
+    <num>2</num>
+    <name>吴钒瑞</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>11</app>
+    <goal>4</goal>
+    <assist>2</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2008">
+    <num>25</num>
+    <name>张腾远</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>7</app>
+    <goal>3</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2009">
+    <num>52</num>
+    <name>傅尔加</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>6</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2010">
+    <num>14</num>
+    <name>唐浩程</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>6</app>
+    <goal>0</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2011">
+    <num>23</num>
+    <name>李林曦</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2012">
+    <num>31</num>
+    <name>柴文涛</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>1</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2013">
+    <num>37</num>
+    <name>叶家榕</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>4</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2014">
+    <num>57</num>
+    <name>殷安彤</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>1</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2015">
+    <num>26</num>
+    <name>李东奇</name>
+    <grade>20</grade>
+    <pos>0</pos>
+    <app>3</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+
+<!-- 23年毕业 -->
+
+<player id="1903">
+    <num>27</num>
+    <name>马骋</name>
+    <grade>19</grade>
+    <pos>2</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1810">
+    <num>9</num>
+    <name>陈小向</name>
+    <grade>18</grade>
+    <pos>2</pos>
+    <app>12</app>
+    <goal>1</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2016">
+    <num>81</num>
+    <name>李晨</name>
+    <grade>-</grade>
+    <pos>3</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1904">
+    <num>22</num>
+    <name>喻琪锐</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <app>7</app>
+    <goal>3</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1905">
+    <num>21</num>
+    <name>陆传捷</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <app>11</app>
+    <goal>3</goal>
+    <assist>3</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1906">
+    <num>13</num>
+    <name>祁林</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>1</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1907">
+    <num>3</num>
+    <name>朱选昊</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1908">
+    <num>36</num>
+    <name>罗伟梁</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1601">
+    <num>1</num>
+    <name>曹彧</name>
+    <grade>16</grade>
+    <pos>0</pos>
+    <app>15</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<!-- 22年毕业 -->
+
+<player id="1602">
+    <num>10</num>
+    <name>王子宁</name>
+    <grade>16</grade>
+    <pos>1</pos>
+    <app>35</app>
+    <goal>14</goal>
+    <assist>17</assist>
+    <yc>8</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1701">
+    <num>24</num>
+    <name>许铃鸿</name>
+    <grade>17</grade>
+    <pos>1</pos>
+    <app>31</app>
+    <goal>55</goal>
+    <assist>12</assist>
+    <yc>2</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1702">
+    <num>44</num>
+    <name>刘泽宇</name>
+    <grade>17</grade>
+    <pos>1</pos>
+    <app>36</app>
+    <goal>1</goal>
+    <assist>5</assist>
+    <yc>2</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1801">
+    <num>17</num>
+    <name>傅林轲</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>14</app>
+    <goal>1</goal>
+    <assist>2</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1802">
+    <num>16</num>
+    <name>孙鹏伟</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>17</app>
+    <goal>1</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1803">
+    <num>18</num>
+    <name>朱嘉杰</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>1</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1804">
+    <num>78</num>
+    <name>冯建龙</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1805">
+    <num>12</num>
+    <name>柯瀚</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>4</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1806">
+    <num>28</num>
+    <name>王应泽</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1807">
+    <num>37</num>
+    <name>张希文</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>1</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1808">
+    <num>1</num>
+    <name>梁桀游</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1809">
+    <num>7</num>
+    <name>崔卓</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <app>6</app>
+    <goal>1</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<!-- 21年毕业 -->
+
+<player id="1602">
+    <num>48</num>
+    <name>李纪元</name>
+    <grade>16</grade>
+    <pos>1</pos>
+    <app>5</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1603">
+    <num>6</num>
+    <name>张旭升</name>
+    <grade>16</grade>
+    <pos>0</pos>
+    <app>35</app>
+    <goal>23</goal>
+    <assist>8</assist>
+    <yc>3</yc>
+    <rc>1</rc>
+</player>
+
+<player id="1703">
+    <num>5</num>
+    <name>刘崇文</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>9</app>
+    <goal>2</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1704">
+    <num>15</num>
+    <name>吴宇飞</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>6</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1705">
+    <num>11</num>
+    <name>武明睿</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>8</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1706">
+    <num>19</num>
+    <name>於宙</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>8</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1707">
+    <num>-</num>
+    <name>黄杨</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>4</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>1</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1708">
+    <num>-</num>
+    <name>朱泽源</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>3</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1709">
+    <num>-</num>
+    <name>赵京梁</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>4</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+
+<player id="1710">
+    <num>-</num>
+    <name>应东辰</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>2</app>
+    <goal>0</goal>
+    <assist>1</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="1711">
+    <num>-</num>
+    <name>张弨</name>
+    <grade>17</grade>
+    <pos>0</pos>
+    <app>4</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<!-- 20年毕业 -->
+
+</playerlist>

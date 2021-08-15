@@ -1,7 +1,7 @@
 <matchlist>
 
 <match id="0000">
-    <date>比赛日期</date>
+    <date>日期</date>
     <opp>对手</opp>
     <result>比分</result>
     <scorer>进球队员</scorer>
@@ -252,4 +252,4 @@
     <scorer>王子宁*2，许铃鸿*2</scorer>
 </match>
 
-</playerlist>
+</matchlist>
