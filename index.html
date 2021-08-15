@@ -24,7 +24,7 @@ Last Edited on 15/08/2021
 		<span id="wrap_title">北京大学化学与分子工程学院足球队</span>
         <!--顶部logo-->
         <div id="wrap_logo">
-            <img src="img/logo1.png" alt="化院足球队Logo" />
+            <img src="img/logo_ccme.png" alt="化院足球队Logo" />
         </div>
         <div class="menu_tab">
             <div class="tab">
@@ -46,7 +46,7 @@ Last Edited on 15/08/2021
 				</a>
             </div>
             <div>
-			<p>下场比赛：暂无</p>
+			<span id="nextmatch">下场比赛：暂无</span>
 			</div>
         </div>
 	</div>
@@ -83,12 +83,12 @@ news += '</table>';
 </script>
 
 <div id="index_content">
-	<div class="block">
+	<div class="block1">
 		<h1>球队动态</h1>
 		<div id="news"></div>
 	</div>
 
-	<div class="block">
+	<div class="block2">
 		<h1>关于我们</h1>
 		<p>b站主页    直播间    微信公众号</p>
 		<p>由于开发能力有限，不能保证网页对不同设备的适配，建议使用电脑浏览器查看本站。</p>
@@ -99,11 +99,11 @@ news += '</table>';
 		<p>Contact the developer: yfwu0202 AT gmail.com</p>
 	</div>
 
-	<div class="block">
+	<div class="block1">
 		<h1>致谢</h1>
 		<div class="text">
 			<p>我们感谢以下人员在化院足球队“信息化”进程中作出的突出贡献：</p>
-			<p>网页开发：吴宇飞，陆传捷；视频制作：邓卓锴，吴宇飞，王应泽；数据统计：封凡，黄志贤</p>
+			<p>网页开发：吴宇飞；视频制作：邓卓锴，吴宇飞；数据统计：封凡，黄志贤</p>
 			<br />
 			<p>感谢北大化院团委、学工、学生会对球队的支持，感谢北大足协在赛事组织中的努力。</p>
 			<p>感谢支持和关注化院足球的每一个人！</p>
@@ -119,6 +119,7 @@ news += '</table>';
 
 <script>
 	document.getElementById('news').innerHTML=news;
+	document.getElementById('nextmatch').innerHTML='<p>下场比赛：暂无</p>';  // 在这里便捷更改下场比赛信息
 </script>
 
 </body>

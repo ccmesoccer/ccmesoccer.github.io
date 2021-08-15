@@ -8,16 +8,25 @@ Last Edited on 21/06/2021
 <html>
 	
 <head>
-	
-<script src="../js/loadXML.js"></script>
-<script src="../js/matchIdInterpret.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<script src="../js/loadXML.js"></script>
+	<script src="../js/matchIdInterpret.js"></script>
 
 </head>
 	
 
 <body>
+<div id="wrap">
+    <!--顶部标题-->
+	<span id="wrap_title">北京大学化学与分子工程学院足球队</span>
+    <!--顶部logo-->
+    <div id="wrap_logo">
+    	<img src="../img/logo_ccme.png" alt="化院足球队Logo" />
+    </div>
+</div>
 
-<h3 align="center">比赛日程</h3>
+<span id="page_title">比赛日程</span>
 
 <script>
 xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
