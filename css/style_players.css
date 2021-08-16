@@ -87,7 +87,7 @@
 
 .content table tr td {
 	width: 300px; 
-	height: 200px; 
+	height: 220px; 
 }
 
 .content table tr td ul {
@@ -112,7 +112,7 @@
 #copyright {
 	position: relative;
 	width: 1280px;
-	top: 3500px;
+	top: 5250px;
 	padding-top: 10px;
 	text-align: center;
 	background-color: rgb(240, 240, 240);

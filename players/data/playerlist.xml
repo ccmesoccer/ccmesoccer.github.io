@@ -615,6 +615,7 @@
     <status>9</status>
     <grad>普林斯顿大学</grad>
     <portrait>default</portrait>
+</player>
 
 <player id="1405">
     <name>邓卓锴</name>
@@ -623,25 +624,35 @@
     <status>9</status>
     <grad>哥本哈根大学</grad>
     <portrait>default</portrait>
+</player>
 
 <!-- 17年毕业 -->
 <player id="1301">
     <name>沈睿豪</name>
-    <grade>14</grade>
+    <grade>13</grade>
     <pos>0</pos>
     <status>9</status>
     <grad>-</grad>
     <portrait>default</portrait>
+</player>
 
 <!-- 16年毕业 -->
 <player id="1201">
     <name>黎翔</name>
-    <grade>14</grade>
+    <grade>12</grade>
     <pos>0</pos>
     <status>9</status>
     <grad>-</grad>
     <portrait>default</portrait>
+</player>
 
+<player id="1202">
+    <name>封木冬</name>
+    <grade>12</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
 </player>
 
 </playerlist>
