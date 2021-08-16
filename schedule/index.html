@@ -2,31 +2,33 @@
 
 <!--
 Author: Yufei Wu
-Last Edited on 21/06/2021
+Last Edited on 16/08/2021
 -->
 
 <html>
 	
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style_schedule.css"/>
 	<script src="../js/loadXML.js"></script>
 	<script src="../js/matchIdInterpret.js"></script>
+	<script src="../js/resultLight.js"></script>
 
 </head>
 	
 
 <body>
+
+<!-- 背景和标题 -->
 <div id="wrap">
-    <!--顶部标题-->
 	<span id="wrap_title">北京大学化学与分子工程学院足球队</span>
-    <!--顶部logo-->
     <div id="wrap_logo">
     	<img src="../img/logo_ccme.png" alt="化院足球队Logo" />
     </div>
 </div>
 
-<span id="page_title">比赛日程</span>
+<h1 class="page_title">比赛日程</h1>
+<div id="content"></div>
 
 <script>
 xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
@@ -46,40 +48,38 @@ for (j=1;j<x.length;j++){
 	}
 }
 
-var table='<table border="1" align="center" cellpadding="5"><tr>';
+var table='<table id="table"><tr>';
 	
 // 表头
 for (i=0;i<matchColumn.length;i++){
-	table += '<th align="center">' + matchColumn[i] + '</th>'; 
+	table += '<th>' + matchColumn[i] + '</th>'; 
 }
 table += '</tr>';
 
 // 表格内容
 for (j=0;j<matchList.length;j++){
 	table += '<tr>';
-	table += '<td align="center">' + matchList[j][1].split('.').join('/') +'</td>';
-	table += '<td align="center">' + matchIdInterpret(matchList[j][0]) +'</td>';
-	table += '<td align="center">' + matchList[j][2] +'</td>';
-	table += '<td align="center"><img src="../img/Green light.png" alt="W" width="17" height="17" style="float:left">' + matchList[j][3] +'</td>';
-	table += '<td align="center">' + matchList[j][4] +'</td>';
+	table += '<td class="date">' + matchList[j][1].split('.').join('/') +'</td>';
+	table += '<td class="game">' + matchIdInterpret(matchList[j][0]) +'</td>';
+	table += '<td class="opp">' + matchList[j][2] +'</td>';
+	table += '<td class="result">' + resultLight(matchList[j][3]) + matchList[j][3] +'</td>';
+	table += '<td class="scorer">' + matchList[j][4] +'</td>';
 	table += '</tr>';
 }
 table += '</table>';
 
-</script>
+</script> 
 
 
-<div id="table"></div>
-
+	
+vertical-align: middle; <br>
+text-align: center;
 <script>
 
-document.getElementById('table').innerHTML = table;
+document.getElementById('content').innerHTML = table;
 	
 //to do: 图片样式改CSS，增加结果处理函数，增加比赛视频链接
 </script>
-
-
-	
 </body>
 
 
