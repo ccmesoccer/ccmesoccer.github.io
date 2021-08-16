@@ -232,6 +232,51 @@
     <portrait>default</portrait>
 </player>
 
+<player id="1909">
+    <name>李宗霖</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1910">
+    <name>付劲宇</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1911">
+    <name>唐子逸</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1912">
+    <name>裘天予</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1913">
+    <name>胡逸濠</name>
+    <grade>19</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
 <player id="1601">
     <name>曹彧</name>
     <grade>21</grade>
@@ -351,6 +396,33 @@
     <portrait>default</portrait>
 </player>
 
+<player id="1810">
+    <name>汪毅嵩</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1811">
+    <name>罗智康</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1812">
+    <name>翁培壹</name>
+    <grade>18</grade>
+    <pos>0</pos>
+    <status>1</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
 <!-- 21年毕业 -->
 
 <player id="1602">
@@ -426,5 +498,150 @@
 </player>
 
 <!-- 20年毕业 -->
+<player id="1604">
+    <name>南天龙</name>
+    <grade>16</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>哥伦比亚大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1605">
+    <name>宋昊冉</name>
+    <grade>16</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>哥伦比亚大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1501">
+    <name>张瀚垚</name>
+    <grade>15</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>哥伦比亚大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<!-- 19年毕业 -->
+<player id="1502">
+    <name>董舜卿</name>
+    <grade>15</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>巴塞尔大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1503">
+    <name>徐植</name>
+    <grade>15</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>耶鲁大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1504">
+    <name>杨琅轩</name>
+    <grade>15</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1505">
+    <name>臧士豪</name>
+    <grade>15</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>纽约大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1401">
+    <name>李逸坦</name>
+    <grade>14</grade>
+    <pos>1</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<!-- 18年毕业 -->
+<player id="1301">
+    <name>李欢</name>
+    <grade>13</grade>
+    <pos>1</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1302">
+    <name>于聿律</name>
+    <grade>13</grade>
+    <pos>1</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1402">
+    <name>彭诚</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>芝加哥大学</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1403">
+    <name>封凡</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>密歇根大学安娜堡</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="1404">
+    <name>胡俊男</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>普林斯顿大学</grad>
+    <portrait>default</portrait>
+
+<player id="1405">
+    <name>邓卓锴</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>哥本哈根大学</grad>
+    <portrait>default</portrait>
+
+<!-- 17年毕业 -->
+<player id="1301">
+    <name>沈睿豪</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+
+<!-- 16年毕业 -->
+<player id="1201">
+    <name>黎翔</name>
+    <grade>14</grade>
+    <pos>0</pos>
+    <status>9</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+
+</player>
 
 </playerlist>
