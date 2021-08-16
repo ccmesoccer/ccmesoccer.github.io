@@ -9,7 +9,8 @@ Last Edited on 14/08/2021
 	
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style_statistics.css"/>
+	<title>数据统计</title>
 	<script src="../js/loadXML.js"></script>
 
 
@@ -17,17 +18,33 @@ Last Edited on 14/08/2021
 	
 
 <body>
+<!-- 背景和标题 -->
 <div id="wrap">
-    <!--顶部标题-->
 	<span id="wrap_title">北京大学化学与分子工程学院足球队</span>
-    <!--顶部logo-->
     <div id="wrap_logo">
     	<img src="../img/logo_ccme.png" alt="化院足球队Logo" />
     </div>
 </div>
-<h3 align="center">北京大学化学院足球队球员数据统计</h3>
-<h4 align="center">（截止2021.06.21）</h4>
-	
+
+<h1 class="page_title">数据统计</h1>
+<h2 class="page_sub_title">（截止2021.06.21）</h2>
+<div id="buttons">
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
+	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
+</div>
+<div id="content"></div>
+<div id="copyright">
+	<p>本网站遵照<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU General Public License v2.0协议</a>开放源代码</p>
+	<p>Copyright © 2021 - 北京大学化学与分子工程学院足球队</p>
+</div>
+
 <script>
 posList = ["本科生", "研究生", "博士后", "特聘研究员"];
 xmlDoc = loadXML("./data/playerlist.xml");  // 读入xml文件
@@ -59,11 +76,11 @@ function sortPlayersList_Num(code, sign) {
 		else return sign * (x[code] - y[code]);
 	})
 	
-	var table='<table border="1" align="center" cellpadding="5"><tr>';
+	var table='<table id="table"><tr>';
 	
 	// 表头
 	for (i=0;i<playersColumn.length;i++){
-		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+		table += '<th>' + playersColumn[i] + '</th>'; 
 	}
 	table += '</tr>';
 
@@ -71,8 +88,8 @@ function sortPlayersList_Num(code, sign) {
 	for (j=0;j<playersList.length;j++){
 		table += '<tr>';
 		for (i=0;i<playersColumn.length;i++){
-			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
-			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
+			if (i != 3) table += '<td>' + playersList[j][i] +'</td>';
+			else table += '<td>' + posList[playersList[j][i]] +'</td>';
 		}
 		table += '</tr>';
 	}
@@ -87,11 +104,11 @@ function sortPlayersList_String(code, sign) {
 		else return sign * x[code].localeCompare(y[code]);
 	})
 	
-	var table='<table border="1" align="center" cellpadding="5"><tr>';
+	var table='<table id="table"><tr>';
 	
 	// 表头
 	for (i=0;i<playersColumn.length;i++){
-		table += '<th align="center">' + playersColumn[i] + '</th>'; 
+		table += '<th>' + playersColumn[i] + '</th>'; 
 	}
 	table += '</tr>';
 
@@ -99,38 +116,16 @@ function sortPlayersList_String(code, sign) {
 	for (j=0;j<playersList.length;j++){
 		table += '<tr>';
 		for (i=0;i<playersColumn.length;i++){
-			if (i != 3) table += '<td align="center">' + playersList[j][i] +'</td>';
-			else table += '<td align="center">' + posList[playersList[j][i]] +'</td>';
+			if (i != 3) table += '<td>' + playersList[j][i] +'</td>';
+			else table += '<td>' + posList[playersList[j][i]] +'</td>';
 		}
 		table += '</tr>';
 	}
 	table += '</table>';
 	return table;
 }
+	document.getElementById('content').innerHTML=sortPlayersList_Num(0, 1);
 </script>
-
-<br />
-<div align="center">
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);">按球衣号码排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_String(1, 1);">按姓名排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(2, 1);">按年级排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(3, 1);">按身份排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(4, -1);">按出场次数排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(5, -1);">按进球数排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(6, -1);">按助攻数排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(7, -1);">按黄牌数排序</button>
-	<button onclick="document.getElementById('table').innerHTML=sortPlayersList_Num(8, -1);">按红牌数排序</button>
-</div>
-<br />
-<div id="table"></div>
-
-<script>  //预排序
-	document.getElementById('table').innerHTML=sortPlayersList_Num(0, 1);
-</script>
-
-<br /><br />
-
-<p>数据统计：封凡、黄志贤</p>
 
 </body>
 

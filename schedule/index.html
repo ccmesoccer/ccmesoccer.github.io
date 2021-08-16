@@ -10,6 +10,7 @@ Last Edited on 16/08/2021
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
 	<link rel="stylesheet" type="text/css" href="../css/style_schedule.css"/>
+	<title>比赛日程</title>
 	<script src="../js/loadXML.js"></script>
 	<script src="../js/matchIdInterpret.js"></script>
 	<script src="../js/resultLight.js"></script>
@@ -29,6 +30,10 @@ Last Edited on 16/08/2021
 
 <h1 class="page_title">比赛日程</h1>
 <div id="content"></div>
+<div id="copyright">
+	<p>本网站遵照<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">GNU General Public License v2.0协议</a>开放源代码</p>
+	<p>Copyright © 2021 - 北京大学化学与分子工程学院足球队</p>
+</div>
 
 <script>
 xmlDoc = loadXML("./data/matchlist.xml");  // 读入xml文件
@@ -68,18 +73,11 @@ for (j=0;j<matchList.length;j++){
 }
 table += '</table>';
 
-</script> 
-
-
-	
-vertical-align: middle; <br>
-text-align: center;
-<script>
-
 document.getElementById('content').innerHTML = table;
 	
-//to do: 图片样式改CSS，增加结果处理函数，增加比赛视频链接
+//to do: 增加比赛视频链接
 </script>
+
 </body>
 
 
