@@ -16,7 +16,6 @@
 	z-index: 1;
 }
 
-
 /*顶部logo*/
 
 #wrap_title {
@@ -59,54 +58,53 @@
 
 }
 
-.page_sub_title {
-	position: relative; 
-	top: 110px;
-	width: 100%;
-	text-align: center; 
-	font-size: 24px; 
+#contents {
+	position: absolute;
+	top: 140px; 
 }
 
-#buttons {
-	position: relative; 
-	top: 120px;
-	width: 100%; 
-	text-align: center; 
-}
-
-#buttons button {
-	font-size: 14px;
-}
-
-#table {
-	position: relative; 
-	top: 130px;
-	left: 80px;
+.content h2 {
+	text-align: left;
 	width: 1080px;
-	padding: 0 0;
-	font-size: 16px;
-	text-align: center;
-}
-
-#table tr {
-	height: 28px;
-}
-
-#table tr:nth-child(even) {
-	background-color: rgb(240, 240, 240);
-}
-
-#table tr th {
-	vertical-align: middle; 
-	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	margin-left: 100px;
+	font-size: 30px;
 	border-bottom: 2px solid #000;
-	border-top: 2px solid #000;
 }
 
-#table tr td {
-	vertical-align: middle; 
+.content table {
 	text-align: center;
-	border: none;
+	margin: 0;
+	padding: 0 40px;
+	table-layout: fixed;
+}
+
+
+.content table tr td:hover {
+	background-color: #f5f5f5;
+}
+
+.content table tr td {
+	width: 300px; 
+	height: 200px; 
+}
+
+.content table tr td ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content table tr td ul li img {
+	width: 120px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.content table tr td ul li {
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 /*底部*/
@@ -114,7 +112,7 @@
 #copyright {
 	position: relative;
 	width: 1280px;
-	margin-top: 250px;
+	top: 3500px;
 	padding-top: 10px;
 	text-align: center;
 	background-color: rgb(240, 240, 240);
