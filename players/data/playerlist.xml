@@ -26,7 +26,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>2003</portrait>
 </player>
 
 <!-- 24年毕业 -->
@@ -37,7 +37,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1901</portrait>
 </player>
 
 <player id="1902">
@@ -46,7 +46,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1902</portrait>
 </player>
 
 <player id="2004">
@@ -73,7 +73,7 @@
     <pos>0</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>2006</portrait>
 </player>
 
 <player id="2007">
@@ -166,7 +166,7 @@
     <pos>2</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1903</portrait>
 </player>
 
 <player id="1810">
@@ -175,7 +175,7 @@
     <pos>2</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1810</portrait>
 </player>
 
 <player id="2016">
@@ -184,7 +184,7 @@
     <pos>3</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>2016</portrait>
 </player>
 
 <player id="1904">
@@ -283,7 +283,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1601</portrait>
 </player>
 
 <!-- 22年毕业 -->
@@ -294,7 +294,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1602</portrait>
 </player>
 
 <player id="1701">
@@ -303,7 +303,7 @@
     <pos>1</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1701</portrait>
 </player>
 
 <player id="1702">
@@ -321,7 +321,7 @@
     <pos>0</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1801</portrait>
 </player>
 
 <player id="1802">
@@ -330,7 +330,7 @@
     <pos>0</pos>
     <status>0</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1802</portrait>
 </player>
 
 <player id="1803">
@@ -425,13 +425,13 @@
 
 <!-- 21年毕业 -->
 
-<player id="1602">
+<player id="1606">
     <name>李纪元</name>
     <grade>16</grade>
     <pos>1</pos>
     <status>9</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1606</portrait>
 </player>
 
 <player id="1603">
@@ -476,7 +476,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1706</portrait>
 </player>
 
 <player id="1707">
@@ -485,7 +485,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>中科院化学所</grad>
-    <portrait>default</portrait>
+    <portrait>1707</portrait>
 </player>
 
 <player id="1708">
@@ -494,7 +494,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>上海交通大学</grad>
-    <portrait>default</portrait>
+    <portrait>1708</portrait>
 </player>
 
 <!-- 20年毕业 -->
@@ -541,7 +541,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>耶鲁大学</grad>
-    <portrait>default</portrait>
+    <portrait>1503</portrait>
 </player>
 
 <player id="1504">
@@ -550,7 +550,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>-</grad>
-    <portrait>default</portrait>
+    <portrait>1504</portrait>
 </player>
 
 <player id="1505">
@@ -596,7 +596,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>芝加哥大学</grad>
-    <portrait>default</portrait>
+    <portrait>1402</portrait>
 </player>
 
 <player id="1403">
@@ -605,7 +605,7 @@
     <pos>0</pos>
     <status>9</status>
     <grad>密歇根大学安娜堡</grad>
-    <portrait>default</portrait>
+    <portrait>1403</portrait>
 </player>
 
 <player id="1404">
