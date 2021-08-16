@@ -81,25 +81,42 @@
 	position: relative; 
 	top: 100px;
 	width: 100%;
-	padding: 0, 0, 20px;
 	text-align: center; 
 	font-size: 30px; 
 
 }
 
-#table {
+.page_sub_title {
 	position: relative; 
 	top: 110px;
-	margin: 0; 
-	width: 1280px;
-	padding: 0 100px;
+	width: 100%;
+	text-align: center; 
+	font-size: 24px; 
+}
+
+#buttons {
+	position: relative; 
+	top: 120px;
+	width: 100%; 
+	text-align: center; 
+}
+
+#buttons button {
+	font-size: 14px;
+}
+
+#table {
+	position: relative; 
+	top: 130px;
+	left: 80px;
+	width: 1080px;
+	padding: 0 0;
 	font-size: 16px;
-	
+	text-align: center;
 }
 
 #table tr {
 	height: 28px;
-
 }
 
 #table tr:nth-child(even) {
@@ -113,59 +130,18 @@
 	border-top: 2px solid #000;
 }
 
-#table .date {
-	vertical-align: middle; 
-	text-align: left;
-	padding-left: 70px;
-}
-
-#table .game {
-	vertical-align: middle; 
-	text-align: center;
-}
-
-#table .opp {
-	width: 100px;
-	vertical-align: middle; 
-	text-align: center;
-}
-
-#table .result {
-	width: 100px;
-	vertical-align: middle; 
-	text-align: center;
-}
-
-#table .result img {
-	position: relative;
-	margin-top: 2px;
-	margin-left: 10px;
-	margin-right: 0;
-	vertical-align: top; 
-	float: left;
-	width: 17px;
-	height: 17px;
-}
-
-#table .scorer {
-	vertical-align: middle; 
-	text-align: center;
-}
-
-
 /*底部*/
 
 #copyright {
 	position: relative;
 	width: 1280px;
-	margin-top: 160px;
+	margin-top: 250px;
 	padding-top: 10px;
 	text-align: center;
 	background-color: rgb(240, 240, 240);
 }
 
 #copyright p {
-	position: relative;
 	line-height: 2;
 	color: #000;
 }
