@@ -16,33 +16,6 @@
 	z-index: 1;
 }
 
-@-webkit-keyframes sdb05 {
-	0% {
-		-webkit-transform: translate(0, 0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		-webkit-transform: translate(0px, 30px);
-		opacity: 0;
-	}
-}
-
-@keyframes sdb05 {
-	0% {
-		transform: translate(0, 0);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: translate(0px, 30px);
-		opacity: 0;
-	}
-}
 
 /*顶部logo*/
 
