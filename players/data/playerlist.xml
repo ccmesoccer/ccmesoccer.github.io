@@ -1,5 +1,34 @@
 <playerlist>
 
+<!-- 26年毕业 -->
+
+<player id="2101">
+    <name>姚远</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2102">
+    <name>钟伟修</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2103">
+    <name>张丰</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
 <!-- 25年毕业 -->
 
 <player id="2001">
@@ -28,6 +57,106 @@
     <grad>-</grad>
     <portrait>2003</portrait>
 </player>
+
+<player id="2104">
+    <name>刘志阳</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2105">
+    <name>张成一</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2106">
+    <name>周琪琦</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2107">
+    <name>戴一丁</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2108">
+    <name>武承文</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2109">
+    <name>秦家鹏</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2110">
+    <name>陈敬旸</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2111">
+    <name>申玄</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2112">
+    <name>赵思涵</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2113">
+    <name>刘宙达</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
+<player id="2114">
+    <name>金瞳</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <status>0</status>
+    <grad>-</grad>
+    <portrait>default</portrait>
+</player>
+
 
 <!-- 24年毕业 -->
 

@@ -14,6 +14,44 @@
 
 <!-- 身份标识：0-本科，1-研究生，2-博士后，3-特聘研究员 -->
 
+<!-- 26年毕业 -->
+
+<player id="2001">
+    <num>19</num>
+    <name>姚远</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2102">
+    <num>30</num>
+    <name>钟伟修</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2103">
+    <num>29</num>
+    <name>张丰</name>
+    <grade>21</grade>
+    <pos>1</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
 <!-- 25年毕业 -->
 
 <player id="2001">
@@ -26,7 +64,7 @@
     <assist>1</assist>
     <yc>1</yc>
     <rc>0</rc>
-    </player>
+</player>
 
 <player id="2002">
     <num>40</num>
@@ -46,6 +84,138 @@
     <grade>20</grade>
     <pos>1</pos>
     <app>1</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2104">
+    <num>5</num>
+    <name>刘志阳</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2105">
+    <num>6</num>
+    <name>张成一</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2106">
+    <num>11</num>
+    <name>周琪琦</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2107">
+    <num>32</num>
+    <name>戴一丁</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2108">
+    <num>34</num>
+    <name>武承文</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2109">
+    <num>35</num>
+    <name>秦家鹏</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2110">
+    <num>39</num>
+    <name>陈敬旸</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2111">
+    <num>54</num>
+    <name>申玄</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2112">
+    <num>66</num>
+    <name>赵思涵</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2113">
+    <num>67</num>
+    <name>刘宙达</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
+    <goal>0</goal>
+    <assist>0</assist>
+    <yc>0</yc>
+    <rc>0</rc>
+</player>
+
+<player id="2114">
+    <num>70</num>
+    <name>金瞳</name>
+    <grade>21</grade>
+    <pos>0</pos>
+    <app>0</app>
     <goal>0</goal>
     <assist>0</assist>
     <yc>0</yc>
@@ -552,68 +722,5 @@
     <yc>0</yc>
     <rc>0</rc>
 </player>
-
-<player id="1707">
-    <num>-</num>
-    <name>黄杨</name>
-    <grade>17</grade>
-    <pos>0</pos>
-    <app>4</app>
-    <goal>0</goal>
-    <assist>0</assist>
-    <yc>1</yc>
-    <rc>0</rc>
-</player>
-
-<player id="1708">
-    <num>-</num>
-    <name>朱泽源</name>
-    <grade>17</grade>
-    <pos>0</pos>
-    <app>3</app>
-    <goal>0</goal>
-    <assist>0</assist>
-    <yc>0</yc>
-    <rc>0</rc>
-</player>
-
-<player id="1709">
-    <num>-</num>
-    <name>赵京梁</name>
-    <grade>17</grade>
-    <pos>0</pos>
-    <app>4</app>
-    <goal>0</goal>
-    <assist>0</assist>
-    <yc>0</yc>
-    <rc>0</rc>
-</player>
-
-
-<player id="1710">
-    <num>-</num>
-    <name>应东辰</name>
-    <grade>17</grade>
-    <pos>0</pos>
-    <app>2</app>
-    <goal>0</goal>
-    <assist>1</assist>
-    <yc>0</yc>
-    <rc>0</rc>
-</player>
-
-<player id="1711">
-    <num>-</num>
-    <name>张弨</name>
-    <grade>17</grade>
-    <pos>0</pos>
-    <app>4</app>
-    <goal>0</goal>
-    <assist>0</assist>
-    <yc>0</yc>
-    <rc>0</rc>
-</player>
-
-<!-- 20年毕业 -->
 
 </playerlist>
