@@ -7,6 +7,16 @@
     <scorer>进球队员</scorer>
 </match>
 
+<!-- 21新生杯 -->
+
+<match id="2101">
+    <date>2021.10.24</date>
+    <opp>中文</opp>
+    <result>8-2</result>
+    <scorer>???</scorer>
+</match>
+
+
 <!-- 21北大杯 -->
 
 <match id="2110">
