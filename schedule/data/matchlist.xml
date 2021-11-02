@@ -9,11 +9,19 @@
 
 <!-- 21新生杯 -->
 
+
+<match id="2152">
+    <date>2021.10.30</date>
+    <opp>地空</opp>
+    <result>2-0</result>
+    <scorer>???</scorer>
+</match>
+
 <match id="2151">
     <date>2021.10.24</date>
     <opp>中文</opp>
     <result>8-2</result>
-    <scorer>???</scorer>
+    <scorer>陈敬旸*3，许铃鸿*3，周琪琦，王子宁</scorer>
 </match>
 
 
